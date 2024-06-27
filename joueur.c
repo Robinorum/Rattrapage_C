@@ -207,6 +207,7 @@ void is_FarAway(Joueur *joueur1, SDL_Surface *window){
     joueur1->vie -= 1;
     joueur1->y_factor = 0.3;
     joueur1->x_factor = new_factor;
+    joueur1->percent=0;
   }
 
   if( (joueur1->x_factor * window->w) > window->w * 1.3 || (joueur1->x_factor * window->w) < window->w * -1.3 ){       //s'il est allé trop loin
@@ -215,5 +216,6 @@ void is_FarAway(Joueur *joueur1, SDL_Surface *window){
     joueur1->vie -= 1;
     joueur1->y_factor = 0.3;
     joueur1->x_factor = new_factor;
+    joueur1->percent=0;
   }
 }
